@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer club</title>
+    <style type="text/css">
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body
+ {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(232, 233, 161),rgb(189, 190, 255));
+    }
+.box 
+{
+    position: relative;
+    width: 450px;
+    height: 760px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 16px 14px 20px #0000008c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box::before
+{
+    content: '';
+    top: -50%;
+    left: -50%;
+    position: absolute;
+    width: 450px;
+    height: 760px;
+    background: linear-gradient(0deg, transparent,
+    #ff009d, #ff009d);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.box::after
+{
+    content: '';
+    top: -50%;
+    left: -50%;
+    position: absolute;
+    width: 450px;
+    height: 760px;
+    background: linear-gradient(0deg, transparent,
+    rgb(255, 0, 0),rgb(255, 0, 0));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+
+}
+@keyframes animate
+{
+    0%
+    {
+transform: rotate(0deg);
+    }
+100%
+{
+    transform: rotate(360deg);
+}
+}
+#form
+{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transition: 2s;
+}
+h2
+{
+    color: aqua;
+}
+#text1
+{
+    
+    font-family: cambria;
+    font: 100px;
+}
+#button1
+{
+    float: right;
+    height: 30px;
+    width: 75px;
+    border-radius: 2em;
+}
+#another
+{
+    color: aqua;
+    transition: 2s;
+}
+</style>   
+</head>
+<body>
+    <div class="box">
+        <div id="form">
+            <center>
+            <button id="button1" type="button" onclick="modes()"><b>darkmode</b></button>
+        </center>
+            <h2 id="another">
+                <center>
+                    FACE_LAB
+                </center>
+            </h2>
+            <hr>
+            <br>
+            <p id="text1">Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Unde maxime maiores, laudantium, 
+                veritatis quas temporibus sapiente amet cum obcaecati 
+                repellendus impedit porro. Inventore nesciunt 
+                nihil laudantium velit vel praesentium in?
+            </p>
+            <br>
+            <p id="text1">Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Unde maxime maiores, laudantium, 
+                veritatis quas temporibus sapiente amet cum obcaecati 
+                repellendus impedit porro. Inventore nesciunt 
+                nihil laudantium velit vel praesentium in?
+            </p>
+            <br>
+            <p id="text1">Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Unde maxime maiores, laudantium, 
+                veritatis quas temporibus sapiente amet cum obcaecati 
+                repellendus impedit porro. Inventore nesciunt 
+                nihil laudantium velit vel praesentium in?
+            </p>
+            <br>
+            <p id="text1">Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Unde maxime maiores, laudantium, 
+                veritatis quas temporibus sapiente amet cum obcaecati 
+                repellendus impedit porro. Inventore nesciunt 
+                nihil laudantium velit vel praesentium in?
+            </p>
+            <br>
+            <p id="text1">Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Unde maxime maiores, laudantium, 
+                veritatis quas temporibus sapiente amet cum obcaecati 
+                repellendus impedit porro. Inventore nesciunt 
+                nihil laudantium velit vel praesentium in?
+            </p>
+            <br>
+    </div>
+    </div>
+    <script>
+        function modes()
+        {
+            var current_bc = document.getElementById("form").style.backgroundColor
+            if(current_bc == "black")
+            {
+                document.getElementById("form").style.backgroundColor = "white"
+                document.getElementById("form").style.color = "black"
+                document.getElementById("another").style.color = "red"
+            }
+            else
+            {
+                document.getElementById("form").style.backgroundColor = "black"
+                document.getElementById("form").style.color = "white"
+		document.getElementById("another").style.backgroundColor 
+                
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>login1</title>
+    <style>
+        *
+{
+    margin: 8px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppibs', sans-serif;
+    text-shadow: 
+                -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+body
+{
+    background-color: aliceblue;
+}
+#container
+{
+    background: linear-gradient(to right, rgb(223, 213, 213), rgb(195, 195, 223));
+    width: auto;
+    height: 700px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+#screen
+{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(223, 213, 213), rgb(195, 195, 223));
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+#screen p
+{
+    color: black;
+    font-family: 'poppibs', sans-serif;
+    font-weight: bolder;
+    text-shadow: 
+                -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+    
+}
+#createdBy
+{
+    color: rgb(151, 151, 151);
+    font-family: 'poppins', sans-serif;
+    font-weight: bolder;
+    text-shadow: 
+                -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+::placeholder
+{
+    color: rgb(146, 126, 126);
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+}
+#maininput
+{
+    height: 3em;
+    width: auto;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+}
+#mainbutt
+{
+    height: 3em;
+    width: auto;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+}
+#input1
+{
+    background: linear-gradient(to right, rgb(223, 213, 213), rgb(195, 195, 223));
+    border-radius: 1em;
+    width: 20em;
+    height: 50px;
+    border-style: none;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+#button1
+{
+    background: linear-gradient(to right, rgb(223, 213, 213), rgb(195, 195, 223));
+    height: 3em;
+    width: 9em;
+    border-style: none;
+    border-radius: 1em;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+    
+}
+#setname
+{
+    color: rgb(255, 33, 33);
+    font-family: 'poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 
+                -3px -3px 2px rgba(255, 255, 255, 0.3),
+                5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+</head>
+<body>
+    <center>
+       <h1>welcome</h1>
+    </center>
+    
+<div id="container"> 
+    <br>
+    <div id="screen">
+        <marquee behavior="scroll" direction="left" id="setname"></marquee>
+    
+    </div>
+    <br><br>
+    <div id="maininput">
+        <input type="text" id="input1" placeholder="  please enter name" maxlength="10">
+    </div>
+    <br><br>
+    <div id="mainbutt">
+        <button id="button1" type="button" onclick="change_content()">submit</button>
+    </div>
+    <br>
+    
+    <p>&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint delectus animi saepe asperiores labore! Aliquam, neque? Dolorem odio, nihil perspiciatis hic pariatur facilis,
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsum est non beatae quos veritatis unde vel! Sint, officia accusantium enim aperiam quasi dolor quia lab
+        oriosam officiis, saepe beatae obcaecati.
+        est soluta fugiat doloremque repellendus sint repellat.</p>
+
+</div>
+<br><br>
+<footer>
+    <center>
+        <p id="createdBy">created by black sheep</p>
+    </center>
+</footer>
+<script>
+    function change_content()
+{
+    var name = document.getElementById("input1").value
+    var gender = window.prompt("enter gender")
+    if(gender == "female")
+    {
+        document.getElementById("setname").innerHTML = name + " I really wanna fuck with you"
+    }
+    else if(gender == "male")
+    {
+        document.getElementById("setname").innerHTML = name + " you are male so pass"
+    }
+    else if(gender != isNaN(5))
+    {
+        document.getElementById("setname").innerHTML = name + " please enter gender not number"
+    }
+    else
+    {
+        alert("sorry is either you are male or female")
+    }
+    
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="JAVAN.CSS">
+    <link rel="stylesheet" href="water.css">
+    <title>Eden hill</title>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relatives
+}
+body
+{
+    background: #101010;
+}
+header
+{
+    height: auto;
+    width: 100%;
+    box-shadow: 16px 14px 20px #0000008c;
+    position: fixed;
+    color: #ff0052;
+    font-family: Tahoma;
+    font-weight: bolder;
+    width: 100%;
+    
+}
+/**/
+.check, .toggle-cross
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+}
+.check
+{
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+    opacity: 0;
+    cursor: pointer;
+    background: transparent;
+}
+.toggle-cross
+{
+    z-index: 3;
+    background: transparent;
+}
+.line
+{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: aqua;
+    transform-origin: center;
+    border-radius: 2.25px;
+    transition: 0.5s all linear;
+    margin-top: 13px;
+}
+.bar1
+{
+    top: 0;
+}
+.bar2
+{
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bar3
+{
+    top: 100%;
+    transform: translateY(-100%);
+}
+.check:checked ~ .toggle-cross .bar1
+{
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+    background-color: #ff0052;
+}
+.check:checked ~ .toggle-cross .bar2
+{
+    width: 0;
+    opacity: 0;
+    
+}
+.check:checked ~ .toggle-cross .bar3
+{
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg);
+    background-color: #ff0052;
+}
+
+.menu
+{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 1em;
+    list-style: none;
+    color: #fff;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    top: 0;
+    opacity: 0.5;
+    
+}
+.check:checked ~ .menu
+{
+    width: 50%;
+    left: 0;
+    opacity: 2;
+    background-color: #182830;
+    background: linear-gradient(rgb(46, 66, 83), rgb(20, 18, 18));
+    display: block;
+}
+.menu li
+{
+    padding: 2em;
+    font-size: 18px;
+}
+.menu li:hover
+{
+    background: black;
+    border-radius: 1em;
+    color: aliceblue;
+    height: 1em;
+    display: flex;
+    align-items: center;
+}
+header
+{
+    position: relative;
+    
+}
+header h2
+{
+    position: absolute;
+    right: 10px;
+    font-size: 3em;
+}
+header h2:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px #ff0052;
+}
+header h2:nth-child(2)
+{
+    color: rgb(60, 255, 255);
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate
+{
+    0%, 100%
+    {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+                    54% 60%, 70% 61%, 84%
+                     59%, 100% 52%, 100%
+                     100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
+                            51% 62%, 67% 50%, 84% 45%,
+                            100% 46%, 100% 100%, 0% 100%);
+    }
+}
+.javanbox
+{
+    background: transparent;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#javan{
+    position: absolute;
+    width: 80%;
+    height: 200px;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#javan::before
+{
+    content: "";
+    background-image: conic-gradient(#ff0052 20deg, #ff0052 120deg);
+    width: 150%;
+    height: 150px;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+#javan::after
+{
+    content: "welcome to face match";
+    width: 99%;
+    height: 196px;
+    background-color: #101010;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 3px;
+    box-shadow: inset 20px 20px 20px #0000008c
+
+}
+
+@keyframes rotate
+ {
+0%{
+    transform: rotate(0deg);
+
+}
+100%{
+    transform: rotate(-360deg);
+}
+ }
+    </style>
+</head>
+<body>
+<header>
+        <h2>FaceLab</h2>
+        <h2>FaceLab</h2>
+        
+</header>
+<input type="checkbox" class="check">
+        <div class="toggle-cross">
+            <div class="line bar1"></div>
+            <div class="line bar2"></div>
+            <div class="line bar3"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="home">home</a></li>
+            <li id="myname">face lookup</li>
+        </ul>
+        <br>
+        <div class="javanbox">
+        <div id="javan"> </div>
+        </div>
+<footer>
+    
+</footer>
+<script src="STYLE.JS"></script>
+</body>
+</html>

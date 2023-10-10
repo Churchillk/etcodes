@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+   *
+   {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+   }
+   body
+   {
+        background: #1a1919;
+   }
+
+   #B_D1
+        {
+            margin-top: 20px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+
+        }
+        #B_D1:hover
+        {
+            color: white;
+            background: rgb(253, 237, 10);
+            box-shadow: 0 0 10px rgb(253, 237, 10), 0 0 40px black;
+            transition-delay: 0;
+        }
+        #B_D2
+        {
+            margin-top: 20px;
+            margin-right: 15px;          
+            min-height: 3cm;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #B_D2:hover
+        {
+            color: white;
+            background: rgb(67, 116, 180);
+            box-shadow: 0 0 10px rgb(67, 116, 180), 0 0 40px black;
+            transition-delay: 0;
+        }
+        #B_D3
+        {
+            margin-top: 20px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #B_D3:hover
+        {
+            color: white;
+            background: #ff00aa;
+            box-shadow: 0 0 10px #ff00aa, 0 0 40px black;
+            transition-delay: 0;
+        }
+        #B_D4
+        {
+            margin-top: 20px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #B_D4:hover
+        {
+            color: white;
+            background: #11ff38;
+            box-shadow: 0 0 10px #11ff38, 0 0 40px black;
+            transition-delay: 0;
+        }
+        #B_D5
+        {
+            margin-top: 20px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #B_D5:hover
+        {
+            color: white;
+            background: rgb(34, 130, 255);
+            box-shadow: 0 0 10px rgb(34, 130, 255), 0 0 40px black;
+            transition-delay: 0;
+        }
+        
+   input
+   {
+    display: none;
+   }
+   nav
+   {
+    width: 3%;
+    height: 100%;
+    background: #181818;
+    position: inherit;
+    float: left;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0.2px 35px rgba(0, 0, 0, 0.1);
+   }
+   input:checked ~ nav
+   {
+    width: 20%;
+   }
+   input:checked ~ label
+   {
+    left: 22%;
+   }
+   input:checked ~ label .opennav
+   {
+    display: none;
+   }
+   input:checked ~ label .closenav
+   {
+    display: block;
+    float: right;
+   }
+   label 
+   {
+    position: absolute;
+    left: 6%;
+    font-size: 25px;
+    top: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: red;
+   }
+   label .opennav
+   {
+    color: white;
+   }
+   label .closenav
+   {
+    display: none;
+    color: white;
+    float: right;
+
+   }
+   ul
+   {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+   }
+   ul li
+   {
+    list-style: none;
+    margin: 2px;
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+    text-transform: capitalize;
+   }
+   li a
+   {
+    text-decoration: none;
+    color: #6e5f64;
+    font-weight: bold;
+   }
+   li a span
+   {
+    font-size: 14px;
+   }
+   input:checked ~ main
+   {
+    width: 78%;
+   }
+   main
+   {
+    width: 93%;
+    height: 100%;
+    float: left;
+    transition: 0.5s;
+   }
+   main header
+   {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #6e5f64;
+   }
+   header a
+   {
+    padding: 0.5px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+   }
+   .main
+   {
+    width: 100%;
+    height: 80%;
+   }
+        .logo
+        {
+            text-align: center;
+            display: flex;
+            height: 50px;
+            width: 80px;
+            transition: all 0.5s ease;
+            margin: 10px 0 0 10px
+        }
+        .logo img
+        {
+            width: 45px;
+            height: 45px;
+            border-radius: 0;
+        }
+        .logo span
+        {
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .hd
+        {
+            color: #6e5f64;
+        }
+   @media (max-width: 768px)
+   {
+    nav
+    {
+        position: absolute;
+        width: 0;
+        z-index: 1;
+    }
+    input:checked ~ main
+   {
+    width: 93%;
+   }
+   input:checked ~ nav
+   {
+    width: 220px;
+   }
+   input:checked ~ label
+   {
+    left: 220px;
+   }
+   }
+            </style>
+</head>
+<body>
+    <input type="checkbox" id="open">
+    <label for="open"><i class="opennav">=</i><i class="closenav">X</i></label>
+    <nav>
+    <ul>
+        <li>
+        <h2 class="logo"><IMG SRC="/LOGO.PNG" alt=""><span class="nav-item">welcome back</span></h2>
+            <br>
+        <li><a href="#"><i class="fas fa-home"></i><span class="nav-item">Home</span></a></li>
+        <li><a href="#"><i class="fas fa-address-book-o"></i><span>profile</span></a></li>
+        <li><a href="#"><i class="fas fa-clipboard"></i><span>wallet</span></a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i><span>Analytics</span></a></li>
+        <li><a href="#"><i class="fas fa-file-text-o"></i><span>Task</span></a></li>
+        <li><a href="#"><i class="fas fa-th-large"></i><span>Settings</span></a></li>
+        <li><a href="#"><i class="fas fa-calender-o"></i><span>Help</span></a></li>
+        <li><a href="#"><i class="fas fa-rss"></i><span>Log out</span></a></li>
+    </ul>
+</nav>
+<main>
+<header>
+    <span>&#124;</span>
+    <a href="#" class="hd">Login</a>
+    <a href="#" class="hd">Sign out</a>
+    <a href="#" class="hd">email</a>
+    <a href="#" class="hd">register</a>
+</header>
+<div class="main">
+    <br><div id="B_D1"><h3>ONLINE ADMISSION PORTAL</h3></div><br>
+    <div id="B_D2"><h3>FEE PAYMENT</h3></div><br>
+    <div id="B_D3"><h3>STUDENT PORTAL - OFF CAMPUS</h3></div><br>
+    <div id="B_D4"><h3>STUDENT PORTAL - ON CAMPUS</h3></div><br>
+    <div id="B_D5"><h3>DOWNLOADS</h3></div><br>
+</div>
+</main>
+</body>
+</html>

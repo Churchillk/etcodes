@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *
+        {
+         margin: 0;
+         padding: 0;
+         outline: none;
+         border: none;
+         text-decoration: none;
+         box-sizing: border-box;
+         font-family: "poppins", sans-serif;
+        }
+        body
+        {
+            background: #181818;
+        }
+        nav
+        {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            background: #181818;
+            width: 90px;
+            overflow: hidden;
+            transition: width 0.2s linear;
+            box-shadow: 0.2px 35px rgba(0, 0, 0, 0.1);
+        }
+        .logo
+        {
+            text-align: center;
+            display: flex;
+            height: 50px;
+            width: 80px;
+            transition: all 0.5s ease;
+            margin: 10px 0 0 10px
+        }
+        .logo img
+        {
+            width: 45px;
+            height: 45px;
+            border-radius: 0;
+        }
+        .logo span
+        {
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        a
+        {
+            position: relative;
+            color: rgb(85, 83, 83);
+            font-size: 14px;
+            display: table;
+            width: 300px;
+            padding: 10px;
+        }
+        .fas
+        {
+            position: relative;
+            width: 70px;
+            height: 40px;
+            top: 14px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .nav-item
+        {
+            position: relative;
+            top: 12;
+            margin-left: 10px;
+        }
+        a:hover
+        {
+            background: #3a3939;
+        }
+        nav:hover
+        {
+            width: 280px;
+            transition: all 0.5s ease;
+        }
+        .logout
+        {
+            position: absolute;
+            bottom: 0;
+        }
+        .wlcm
+        {
+            font-weight: 100;
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 1em;
+            color: whitesmoke;
+        }
+        #B_D1
+        {
+            margin-top: 20px;
+            margin-left: 100px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 3px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+
+        }
+        #B_D1:hover
+        {
+            color: white;
+            background: rgb(253, 237, 10);
+            box-shadow: 0 0 10px rgb(253, 237, 10), 0 0 40px black;
+            transition-delay: 0;
+        }
+        #B_D2
+        {
+            margin-top: 20px;
+            margin-left: 100px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 3px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #B_D2:hover
+        {
+            color: white;
+            background: rgb(67, 116, 180);
+            box-shadow: 0 0 10px rgb(67, 116, 180), 0 0 40px black;
+            transition-delay: 0;
+        }
+        #B_D3
+        {
+            margin-top: 20px;
+            margin-left: 100px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 3px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #B_D3:hover
+        {
+            color: white;
+            background: #ff00aa;
+            box-shadow: 0 0 10px #ff00aa, 0 0 40px black;
+            transition-delay: 0;
+        }
+        #B_D4
+        {
+            margin-top: 20px;
+            margin-left: 100px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 3px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #B_D4:hover
+        {
+            color: white;
+            background: #11ff38;
+            box-shadow: 0 0 10px #11ff38, 0 0 40px black;
+            transition-delay: 0;
+        }
+        #B_D5
+        {
+            margin-top: 20px;
+            margin-left: 100px;
+            margin-right: 15px;
+            min-height: 3cm;box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 0.7em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 20px 20px 20px #0000008c;
+            color: #6e5f64;
+            font-size: medium;
+            letter-spacing: 3px;
+            border-radius: 10px;
+            background-color: #101010;
+            box-shadow: 16px 14px 20px #0000008c;
+            transition: 0.2s;
+            overflow: hidden;
+            padding: 0.1em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #B_D5:hover
+        {
+            color: white;
+            background: rgb(34, 130, 255);
+            box-shadow: 0 0 10px rgb(34, 130, 255), 0 0 40px black;
+            transition-delay: 0;
+        }
+        
+            </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+<div>
+    <h5 class="wlcm"><span><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;welcome back churchil</b></span></h5>
+</div>
+
+<br><div id="B_D1"><h3>ONLINE ADMISSION PORTAL</h3></div><br>
+<div id="B_D2"><h3>FEE PAYMENT</h3></div><br>
+<div id="B_D3"><h3>STUDENT PORTAL - OFF CAMPUS</h3></div><br>
+<div id="B_D4"><h3>STUDENT PORTAL - ON CAMPUS</h3></div><br>
+<div id="B_D5"><h3>DOWNLOADS</h3></div><br>
+<nav>
+    <ul>
+        <li>
+            <h2 class="logo">
+                <IMG SRC="/LOGO.PNG" alt="">
+                <span class="nav-item">welcome back</span>
+            </h2>
+            <br>
+        </li><a href="#">
+        <i class="fas fa-home"></i>
+        <span class="nav-item">Home</span>
+    </a></li>
+    <li><a href="#">
+        <i class="fas fa-user"></i>
+        <span class="nav-item">profile</span>
+    </a></li>
+    <li><a href="#">
+        <i class="fas fa-wallet"></i>
+        <span class="nav-item">wallet</span>
+    </a></li>
+    <li><a href="#">
+        <i class="fas fa-chart-bar"></i>
+        <span class="nav-item">Analytics</span>
+    </a></li>
+    <li><a href="#">
+        <i class="fas fa-tasks"></i>
+        <span class="nav-item">Task</span>
+    </a></li>
+    <li><a href="#">
+        <i class="fas fa-cog"></i>
+        <span class="nav-item">Settings</span>
+    </a></li>
+    <li><a href="#">
+        <i class="fas fa-question-circle"></i>
+        <span class="nav-item">Help</span>
+    </a></li>
+    <li><a href="#" class="logout">
+        <i class="fas fa-sign-out-alt"></i>
+        <span class="nav-item">Log out</span>
+    </a></li>
+    </ul>
+</nav>
+</body>
+</html>
